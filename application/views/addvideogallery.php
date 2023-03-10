@@ -17,36 +17,59 @@
             <div class="main-content">
 
                 <div class="page-content">
-                    <div class="container-fluid">                           
+                    <div class="container-fluid">
+                        
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="card-title">Student List</h4>
-                                        <table id="datatables" class="table table-bordered" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <h4 class="card-title">Add Video Gallery Link</h4>
+                                        <form class="" enctype="multipart/form-data; charset=utf-8" method="post" action="<?php echo base_url('dashboard/addvideogallerydata');?>">
+                                            <div class="form-group" >
+                                                <div class="form-group">
+                                                    <label>Add Video Link </label>
+                                                    <input type="url" value="" class="form-control" name="youtubelink" placeholder="Video Link">
+                                                </div>
+                                            </div>
+                                              <button type="submit" name="submit" value="submit" class="btn btn-primary">Submit</button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Youtube Review's List</h4>
+                                        
+
+                                        <table id="datatable" class="table table-bordered  " style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
                                                 <th class="thclass">#Id</th>
-                                                <th class="thclass">Student Name</th>
-                                                <th class="thclass">Student Email</th>
-                                                <th class="thclass">Student Mobile</th>
-                                                <th class="thclass">Discount</th>
+                                                <th class="thclass">Youtube link</th>
+                                                <th class="thclass">Action</th>
                                             </tr>
                                             </thead>  
                                             <tbody>
-                                               <?php if($adjustamountlist){
+                                               <?php if($get_videogal_data){
                                                 $i=1;
-                                                foreach ($adjustamountlist as $key => $value) { 
+                                                foreach ($get_videogal_data as $key => $value) { 
                                                     // echo "<pre>";
                                                     // print_r($value);
                                                 ?> 
                                             <tr>
                                                 <td><?php echo $i++;?></td>
-                                                <td><?php echo $value['usr_firstname'].' '.$value['usr_lastname']; ?>
+                                                <td><?php echo $value['youtubelink']; ?></td>
+                                                <td>
+                                                     <form method="POST" onclick="check()" action="<?php echo base_url('dashboard/deletevideogallink'); ?>">
+                                                         <input type="hidden" value="<?php echo  $value['id'] ?>" name="id" />        
+                                                         <button  type="submit" name="submit"  class="btn btn-sm"><i style="font-size: 21px;position:    margin-left: 19px;color:#626ed4;" class="mdi mdi-delete"></i></button>
+                                                     </form>
+                                                     
                                                 </td>
-                                                <td><?php echo $value['usr_email']; ?></td>
-                                                <td><?php echo $value['usr_mobile_no']; ?></td>
-                                                <td><?php echo $value['fk_adjustedAmount']; ?></td>
                                             </tr>
                                                <?php }} ?> 
                                          
@@ -71,26 +94,9 @@
         </div>
         <!-- END layout-wrapper -->
 
-
-
-        
-
-
        <?php $this->load->view('footd');?>
 
        <script type="text/javascript">
-
-
-        $(document).ready(function() {
-         $('#datatables').dataTable( {
-            "iDisplayLength": 10,
-             "deferRender": true ,
-             stateSave: true
-         }
-             );
-         } );
-
-
            $(document).ready(function() {
 
                 $(".mdi-delete").click(function(){
@@ -112,7 +118,7 @@
                             }
                             setTimeout(function(){
                                window.location.reload(1);
-                            }, 2000);
+                            }, 5000);
 
                         },
                         error:function(error){
@@ -126,40 +132,12 @@
             } );
 
        </script>
+       
 
-    <?php if(isset($error)){ ?>
-      <script type="text/javascript">
-        color = Math.floor((Math.random() * 4) + 1);
-
-          $.notify({
-              icon: "tim-icons icon-bell-55",
-              message: "<?php if(isset($error)){ echo $error['error']; } ?>"
-
-            },{
-                type: type[color],
-                timer: 8000,
-            });
-          
-          setTimeout(function() {
-                        window.location.href = '<?php echo base_url('dashboard/getstudlist')?>';
-           }, 2000);
-
-      </script>
-
-    <?php } ?>
 
 <script>
     function check() {
         if(confirm("Are You Sure You Want To Delete")==true)
-        {
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-     function checkstu() {
-        if(confirm("Are You Sure You Want Activate Student ? ")==true)
         {
             return true;
         }else{

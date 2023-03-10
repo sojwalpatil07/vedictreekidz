@@ -56,15 +56,6 @@
                                                         <span style="color:red"><?php echo form_error('student_mobile');?></span>
                                                     </div>
                                                 </div>
-                                                 <div class="col-xl-4 col-md-6">
-                                                   <div class="form-group" >
-                                                        <div class="form-group">
-                                                            <label>Enter DOB  </label> <span style="color:red">*</span>
-                                                            <input type="date" class="form-control"  value="<?php echo set_value('student_dob'); ?>" id="student_dob"  name="student_dob" placeholder="DOB ">
-                                                        </div>
-                                                        <span style="color:red"><?php echo form_error('student_mobile');?></span>
-                                                    </div>
-                                                </div>
                                                 
                                                 <div class="col-xl-4 col-md-6">
                                                    <div class="form-group" >

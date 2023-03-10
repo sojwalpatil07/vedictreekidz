@@ -39,6 +39,49 @@
                 </div>
             </div>
         </div>
+        
+        <div class="parallax">
+            <div class="row justify-content-center pt-4">
+                <div class="col-lg-8">
+                    <div class="section_tittle_style_02">
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s"> <div class="title_overlay_effect">Video Gallery </div></h1>
+                        <p class="description3 wow fadeInDown" data-wow-delay=".3s"><?php echo ucwords("Vedic Tree little stars are enjoying online education at home. Parents and loved one's are experiencing excellent development of child day by day.");?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <?php if($get_videogal_data){ 
+                            foreach($get_videogal_data as $value){
+                                
+                                $shortUrlRegex = '/youtu.be\/([a-zA-Z0-9_-]+)\??/i';
+                              $longUrlRegex = '/youtube.com\/((?:embed)|(?:watch))((?:\?v\=)|(?:\/))([a-zA-Z0-9_-]+)/i';
+
+                              if(preg_match($longUrlRegex, $value['youtubelink'], $matches)) {
+                                  $youtube_id = $matches[count($matches) - 1];
+                              }
+                              if(preg_match($shortUrlRegex, $value['youtubelink'], $matches)) {
+                                  $youtube_id = $matches[count($matches) - 1];
+                              }
+                            
+                              $youtubelink = 'https://www.youtube.com/embed/' . $youtube_id ;
+                              
+                              
+                        ?>
+                <div class="col-lg-4">
+                   
+                     <iframe  width="360" height="315"
+                        src="<?php echo $youtubelink; ?>" >
+                    </iframe>
+                </div>
+                <?php }}  ?>
+                    
+               
+            </div>
+        </div>
+        
+        
     </section>
     <!-- out gallery part end -->
     <!-- testimonial part here -->

@@ -24,9 +24,9 @@
                 </div>
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                     <div class="program_details_content mt-5 mt-lg-0">
-                        <h2 class="kid_title mb-4"> <span class="title_overlay_effect is_show">Playgroup</span></h2>
+                        <h2 class="kid_title mb-4"> <span class="title_overlay_effect is_show">Senior KG</span></h2>
                         <div class="list_content">
-                            <p>Vedic Tree's playgroup course is the first step of children to get well versed with the school environment and studies. Kids are given their own space to grow with utmost proper care. Their speech capability is improved by teaching them. Here they are given a caring environment to blossom at their own pace. Also they are prepared and putting them habit for school environment for coming years..</p>
+                            <p>Vedic Tree's Senior KG Program is unique in that they prepare the child holistically and well ahead for primary school education. The program is thoughtfully curated to facilitate a smooth transition from preschool to a structured learning environment, setting the stage for formal school. All the skills and the learning and information gathering the child has acquired in the preceding two years of the Vedic Tree's Junior KG & Nursery programs are assimilated, reinforced and come to fruition in these transformative years.</p>
                         </div>
                     </div>
                 </div>
@@ -62,8 +62,8 @@
             <div class="row">
                 
                 <div class="col-lg-12 wow fadeInUp" data-wow-delay=".5s" style="background-color: #4ccdffa6;box-shadow: 4px 5px 7px 2px;border: 2px dotted;border-radius: 13px;padding: 50px;">
-                    <h1 style="font-weight: 900;" >Playgroup  children develop the following skills :</h1>
-                    <p style="font-weight:700;color:white;text-align:justify;font-size:larger">Writing skills through emergent literacy.,Advanced language and reading skills through storytelling.,Advanced math skills with concepts such as bar graphs and word problems.,Public speaking skills through pretend and play and various opportunities such as hosting the class and annual function..</p>
+                    <h1 style="font-weight: 900;" >Senior KG children develop the following skills :</h1>
+                    <p style="font-weight:700;color:white;text-align:justify;font-size:larger">Writing skills through emergent literacy.Advanced language and reading skills through storytelling.Advanced math skills with concepts such as bar graphs and word problems.Public speaking skills through pretend and play and various opportunities such as hosting the class and annual function..</p>
                 </div>
                 
                 
@@ -98,8 +98,7 @@
     <!-- teacher details part end -->
     
     
-    
-     <section class="teacher_details_info section_padding">
+    <section class="teacher_details_info section_padding">
         <div class="container">
             <div class="row">
                 
@@ -288,6 +287,7 @@ At Vedic Tree, children test out ideas, engage in playful problem solving, ask q
     
     
     
+    
      <!-- testimonial part here -->
     <section class="testimonial_part section_padding">
         <div class="container">
@@ -336,9 +336,6 @@ At Vedic Tree, children test out ideas, engage in playful problem solving, ask q
         </div>
     </section>
     <!-- testimonial part end -->
-    
-    
-    
     
     
     

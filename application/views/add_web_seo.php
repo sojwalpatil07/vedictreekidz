@@ -123,7 +123,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title">Session List</h4>
-                                        <table id="datatable" class="table table-bordered " style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <table id="datatabled" class="table table-bordered " style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
                                                 <th class="thclass">#Id</th>
@@ -176,6 +176,16 @@
             <!-- END layout-wrapper -->
 
        <?php $this->load->view('footd');?>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#datatabled').DataTable( {
+        "scrollX": "400px",
+       
+    })
+});
+</script>
+
 
 <?php if(isset($error)){ ?>
   <script type="text/javascript">

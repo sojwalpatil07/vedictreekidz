@@ -62,28 +62,31 @@
                     </div>
                 </div>
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                    <div class="get_start_content mt-5 mt-lg-0">
+                    <div class="get_start_content mt-5 mt-lg-0" style="height: 428px;overflow: auto;" >
                         <!--<h2 class="kid_title"> <span class="title_overlay_effect"> What makes us unique? </span></h2>-->
                         <p>
-                            <span style="color:green; font-weight: 900;">Vedic Tree</span> believes that Value Based Education is the key to success and Education is worthless if no values are embedded in it. For this reason, our Curriculum is designed so that <u>LIFE SKILL ACTIVITIES</u> are integrated throughout the day to day learning.
-                            
-                            <!--<span style="color:green; font-weight: 900;">
-                            VEDIC TREE</span> believes that Value Based Education is the key to success and Education is baseless if there are no values embedded in it. Hence at Vedic Tree the Curriculum has been designed in such a manner that <span style="color: red;font-weight: 900;"> VALUES & LIFE SKILL ACTIVITIES</span> are included in the day to day learning. Value based learning happens in a <span style="color:goldenrod;font-weight: 900;"> PLAY & LEARN Method.
-                            </span>-->
+                            <span style="color:#432a71; ">
+                                Our web site is indeed a small effort to disseminate information on the whereabouts of an Vedic Tree School backed by the international experiences in educational administration and supportive sharing of intellectual acquisitions. It would refer to the evolution of a unique experience of many years, of assuring an excellent atmosphere and of an in depth realization of democratic and child-centered approach to education.
+
+It is all inclusive and assuredly futuristic. The said genre of education has the unique impetus for individual care, being conspicuously enveloping persons, while being vibrantly collective in its import and purpose. We strongly believe that it is such policies that define and establish the real profile of an educational institution carrying out its mission for the society in the true sense.
+
+It is believed that the website can make the information available at a few keystrokes away and by means of which it would be easy for anyone to access it and also enjoy his privilege of the right to information at his personal convenience while assuring the overall equality of access.
+
+The institution also envisions an aesthetic concern from among the various social needs and aspirations to expected standards of excellence. It would include human and religious values of deep trust in God and trust in the humanity of each person. It is deeply integrative and humane not only in its content but also in its process.
                             </p>
-                        <div class="list_content">
-                            <ul>
-                                <li class="wow fadeInLeft" data-wow-delay=".5s"><i class="far fa-check-circle"></i> Animated vidoes to watch at your own conveinence</li>
-                                <li class="wow fadeInLeft" data-wow-delay=".5s"><i class="far fa-check-circle"></i> LIVE interactive online classes with teachers</li>
-                                <li class="wow fadeInLeft" data-wow-delay=".6s"><i class="far fa-check-circle"></i> Activity videos to enhance active learning</li>
-                                <li class="wow fadeInLeft" data-wow-delay=".6s"><i class="far fa-check-circle"></i> Value Based Education</li>
-                                <li class="wow fadeInLeft" data-wow-delay=".5s"><i class="far fa-check-circle"></i> Easy mobile access</li>
-                                <li class="wow fadeInLeft" data-wow-delay=".5s"><i class="far fa-check-circle"></i> Age appropriate content</li>
-                                <li class="wow fadeInLeft" data-wow-delay=".6s"><i class="far fa-check-circle"></i> Our content is mapped to key learning milestones</li>
-                                <li class="wow fadeInLeft" data-wow-delay=".6s"><i class="far fa-check-circle"></i> Each story, rhyme and activity will help your preschooler learn</li>
-                            </ul>
-                        </div>
-                        <a href="<?php echo base_url('website/contact');?>" class="get_start_btn">Get Started Now! <i class="ti-arrow-right"></i> </a>
+                        <!--<div class="list_content">-->
+                        <!--    <ul>-->
+                        <!--        <li class="wow fadeInLeft" data-wow-delay=".5s"><i class="far fa-check-circle"></i> Animated vidoes to watch at your own conveinence</li>-->
+                        <!--        <li class="wow fadeInLeft" data-wow-delay=".5s"><i class="far fa-check-circle"></i> LIVE interactive online classes with teachers</li>-->
+                        <!--        <li class="wow fadeInLeft" data-wow-delay=".6s"><i class="far fa-check-circle"></i> Activity videos to enhance active learning</li>-->
+                        <!--        <li class="wow fadeInLeft" data-wow-delay=".6s"><i class="far fa-check-circle"></i> Value Based Education</li>-->
+                        <!--        <li class="wow fadeInLeft" data-wow-delay=".5s"><i class="far fa-check-circle"></i> Easy mobile access</li>-->
+                        <!--        <li class="wow fadeInLeft" data-wow-delay=".5s"><i class="far fa-check-circle"></i> Age appropriate content</li>-->
+                        <!--        <li class="wow fadeInLeft" data-wow-delay=".6s"><i class="far fa-check-circle"></i> Our content is mapped to key learning milestones</li>-->
+                        <!--        <li class="wow fadeInLeft" data-wow-delay=".6s"><i class="far fa-check-circle"></i> Each story, rhyme and activity will help your preschooler learn</li>-->
+                        <!--    </ul>-->
+                        <!--</div>-->
+                        <!--<a href="<?php echo base_url('website/contact');?>" class="get_start_btn">Get Started Now! <i class="ti-arrow-right"></i> </a>-->
                     </div>
                 </div>
             </div>
